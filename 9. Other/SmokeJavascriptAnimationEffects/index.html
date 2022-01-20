@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Smoke | Javascript Text Animation Effects</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<section>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam totam labore ipsa perferendis! Ipsa labore doloremque laboriosam debitis quos blanditiis! Repellat ratione minus delectus sunt distinctio necessitatibus fugit ex aspernatur!</p>
+		</section>
+		<script>
+			// now, split text into letters
+			const text = document.querySelector('.text');
+			text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+
+			// now, add active class on hovered <span> tag
+			const letters = document.querySelectorAll('span');
+			for (let i=0; i<letters.length; i++){
+				letters[i].addEventListener("mouseover", function(){
+					letters[i].classList.add('active')
+				})
+			}
+		</script>
+	</body>
+</html>
+
+

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <title>CMVM | ElectronicCMVM Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="#" class="logo">CMVM</a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="#" style="--i:1;">Home</a></li>
+				<li><a href="#" style="--i:2;">Store</a></li>
+				<li><a href="#" style="--i:3;">Contact</a></li>
+				<li><a href="#" style="--i:4;">Search</a></li>
+				<li><a href="#" style="--i:5;">More</a></li>
+			</ul>
+		</header>
+		<div class="container">
+			<div class="box" style="--i:3;">
+				<div class="imgBx">
+					<img src="img11.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBx">
+					<img src="img21.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:5;">
+				<div class="imgBx">
+					<img src="img31.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:6;">
+				<div class="imgBx">
+					<img src="img41.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<ul class="sci">
+				<li><a href="#" style="--i:9">Nvidia</a></li>
+				<li><a href="#" style="--i:8">Intel</a></li>
+				<li><a href="#" style="--i:7">AMD</a></li>
+			</ul>
+			<p class="copyrightText">©Electronic CMVM. 2021</p>
+		</div>
+	</section>
+	<script>
+		let imgBx = document.querySelectorAll('.imgBx');
+		imgBx.forEach(popup => popup.addEventListener('click', () =>{
+			popup.classList.toggle('active')
+		}))
+
+		function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var navigation = document.querySelector('.navigation');
+	      menuToggle.classList.toggle('active');
+	      navigation.classList.toggle('active');
+	    }
+	</script>
+</body>
+</html>
+

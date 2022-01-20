@@ -1,0 +1,13 @@
+git init
+
+git add .
+
+git status
+
+git commit -m "22.00.00"
+
+git remote add origin "링크"
+
+git remote -v
+
+git push origin master
