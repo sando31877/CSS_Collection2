@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: url("https://w.namu.la/s/d4f63a0c33ac0e9905dc3a33a6ea9f3009985bb7031e431a14f5cf83d6756ed0fc0937a62561eb68323cf14ca4da9667c4d77d79afb0c117b0f41efae2c20c2c32a9028f15896f539f17fa7ab66af69e863f31410debc4f5030b4264a4eeca2960e41b7b9a54d6d3511722c7cf159f43");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hod {
+  position: relative;
+  width: 700px;
+  height: 950px;
+}
+.main {
+  position: absolute;
+  bottom: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 250px;
+  background: rgb(210, 199, 191);
+  border-bottom-right-radius: 110px;
+  border-bottom-left-radius: 90px;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.hair {
+  position: absolute;
+  top: -120px;
+  height: 140px;
+  width: 100%;
+}
+.hair::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: rgb(107, 66, 66);
+  transform: skewX(330deg);
+}
+.hair::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: rgb(107, 66, 66);
+  transform: skewX(30deg);
+}
+.hair11 {
+  content: "";
+  position: absolute;
+  top: -54px;
+  left: 50%;
+  width: 126px;
+  height: 100px;
+  background: rgb(107, 66, 66);
+  transform: translateX(-60%) rotate(80deg);
+}
+.hair12 {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 10%;
+  width: 256px;
+  height: 80px;
+  background: rgb(107, 66, 66);
+  transform: translateX(-60%) rotate(87deg);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 70px;
+  border-top-right-radius: 30px;
+}
+.hair13 {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 104%;
+  width: 256px;
+  height: 80px;
+  background: rgb(107, 66, 66);
+  transform: translateX(-60%) rotate(93deg);
+  border-top-left-radius: 70px;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 100px;
+}
+.hair14 {
+  content: "";
+  position: absolute;
+  top: -160px;
+  left: 74%;
+  width: 80px;
+  height: 20px;
+  background: rgb(107, 66, 66);
+  transform: rotate(113deg);
+  border-radius: 100px 100px 0 0;
+}
+.hair15 {
+  content: "";
+  position: absolute;
+  top: -200px;
+  left: 71%;
+  width: 80px;
+  height: 20px;
+  background: rgb(107, 66, 66);
+  transform: rotate(40deg);
+  border-radius: 100px 100px 0 0;
+}
+.mouth {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 10px;
+  background: #0e0806;
+  border-radius: 60px;
+}
+.Right {
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  width: 60px;
+  height: 40px;
+  background: rgb(67, 83, 119);
+  background-size: 10px 10px;
+  border-right: 25px solid rgb(233, 233, 233);
+  border-left: 5px solid rgb(233, 233, 233);
+  border-top: 5px solid #333;
+  border-bottom: 5px solid #333;
+}
+.Left {
+  position: absolute;
+  top: 50px;
+  right: 260px;
+  width: 60px;
+  height: 40px;
+  background: rgb(67, 83, 119);
+  background-size: 10px 10px;
+  border-right: 25px solid rgb(233, 233, 233);
+  border-left: 5px solid rgb(233, 233, 233);
+  border-top: 5px solid #333;
+  border-bottom: 5px solid #333;
+}
+
+.Sub_Center {
+  position: absolute;
+  bottom: 198px;
+  left: 28%;
+  width: 300px;
+  height: 400px;
+  background: rgb(213, 213, 173);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.Sub_Left_leg {
+  position: absolute;
+  bottom: -350px;
+  left: 00%;
+  width: 100px;
+  height: 400px;
+  background: rgb(151, 136, 131);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transform: rotate(20deg);
+  border: 5px solid #333;
+}
+.Sub_Right_leg {
+  position: absolute;
+  bottom: -350px;
+  left: 80%;
+  width: 100px;
+  height: 400px;
+  background: rgb(151, 136, 131);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transform: rotate(340deg);
+  border: 5px solid #333;
+}
+.Sub_Left {
+  position: absolute;
+  bottom: -100px;
+  left: -20%;
+  width: 200px;
+  height: 500px;
+  background: rgb(83, 52, 42);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transform: rotate(20deg);
+  border: 5px solid #333;
+}
+.Sub_Right {
+  position: absolute;
+  bottom: -100px;
+  left: 60%;
+  width: 200px;
+  height: 500px;
+  background: rgb(83, 52, 42);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transform: rotate(340deg);
+  border: 5px solid #333;
+}
